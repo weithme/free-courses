@@ -1,11 +1,11 @@
-# 21:50 31.05
+# 22:07 31.05
 # Сложение временных промежутков
 t1 = ARGV[0].to_i
-puts "t1:  " + t1.to_s
+#puts "t1:  " + t1.to_s
 t2 = ARGV[1].to_i
-puts "t2:  " + t2.to_s
+#puts "t2:  " + t2.to_s
 t = t1 + t2
-puts t.to_s
+#puts t.to_s
 
 d=0
 h=0
@@ -26,7 +26,7 @@ kh = 3600
 if t >= kh
     h = (t / kh).to_i
     t = t - h* kh
-    puts "h: " + h.to_s
+    #puts "h: " + h.to_s
 end
 
 # 1 мин = 60 = 60 
@@ -34,11 +34,11 @@ km = 60
 if t >= km
     m = (t / km).to_i
     t = t - m* km
-    puts "m: " + m.to_s
+    #puts "m: " + m.to_s
 end
 
 s = t
-puts "s: " + s.to_s
+#puts "s: " + s.to_s
 
 if d==2
     res = "2 дня "
