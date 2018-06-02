@@ -6,10 +6,10 @@ var t2 = parseInt(process.argv[2]);
 var t = t1 + t2;
 // console.log("t:  " + t.toString());
 
-var d=0;
-var h=0;
-var m=0;
-var s=0;
+var d = 0;
+var h = 0;
+var m = 0;
+var s = 0;
 var res = "";
 // максимальная сумма 200_000 - это ~ 2.3 дня
 // 1 день = 60*60*24 = 86400
@@ -39,17 +39,20 @@ if (t >= km) {
 s = t;
 //console.log("s:  " + s.toString());
 
+// дни никто не просил использовать
 if (d==2) {
-    res = "2 дня ";
+    //res = "2 дня ";
+    h = h + 48;
 } else if (d==1) {
-    res = "1 день ";
+    //res = "1 день ";
+    h = h + 24;
 }
 
-if (h==1 || h==21) {
+if (h==1 || h==21 || h==31 || h==41 || h==51) {
     res = res + h.toString() + " час ";
-} else if ((h>=2 && 4>=h) || (h==22) || (h==23)) {
+} else if ((h>=2 && 4>=h) || (h>=22 && 24>=h) || (h>=32 && 34>=h) || (h>=42 && 44>=h) || (h>=52 && 54>=h)) {
     res = res + h.toString() + " часа ";
-} else if (h>=5 && 20>=h) {
+} else if ((h>=5 && 20>=h) || (h>=25 && 30>=h) || (h>=35 && 40>=h) || (h>=45 && 50>=h) || (h>=55 && 60>=h)) {
     res = res + h.toString() + " часов ";
 }
 
