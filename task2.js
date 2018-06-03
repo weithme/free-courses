@@ -1,9 +1,9 @@
 // Количество дней до нового года
-var d = parseInt(process.argv[1]);
+var d = parseInt(process.argv[2]);
 // console.log(d.toString());
-var m_str = (process.argv[2]).toString();
+var m_str = (process.argv[3]).toString();
 // console.log(m_str.toString());
-var y = parseInt(process.argv[3]);
+var y = parseInt(process.argv[4]);
 // console.log(y.toString());
 
 var feb = 28;
