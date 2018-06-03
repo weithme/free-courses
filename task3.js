@@ -1,3 +1,4 @@
+/*
 // Сложение временных промежутков
 var t1 = parseInt(process.argv[1]);
 // console.log("t1:  " + t1.toString());
@@ -75,3 +76,4 @@ if (s==1 || s==21 || s==31 || s==41 || s==51) {
 // отрезаем пробел в конце
 res = res.trim();
 console.log(res);
+*/
