@@ -1,51 +1,35 @@
-/*
-// Сложение временных промежутков
-var t1 = parseInt(process.argv[1]);
-// console.log("t1:  " + t1.toString());
-var t2 = parseInt(process.argv[2]);
-// console.log("t2:  " + t2.toString());
+var t1 = parseInt(process.argv[2]);
+var t2 = parseInt(process.argv[3]);
 var t = t1 + t2;
-// console.log("t:  " + t.toString());
 
 var d = 0;
 var h = 0;
 var m = 0;
 var s = 0;
 var res = "";
-// максимальная сумма 200_000 - это ~ 2.3 дня
-// 1 день = 60*60*24 = 86400
+
 var kd = 86400;
 if (t >= kd) {
     d = parseInt(t / kd);
     t = t - d*kd;
-    //console.log("d:  " + d.toString());
 }
 
-// 1 час = 60*60 = 3600 
 var kh = 3600;
 if (t >= kh) {
     h = parseInt(t / kh);
     t = t - h*kh;
-    //console.log("h:  " + h.toString());
 }
 
-// 1 мин = 60 = 60 
 var km = 60;
 if (t >= km) {
     m = parseInt(t / km);
     t = t - m*km;
-    //console.log("m:  " + m.toString());
 }
 
 s = t;
-//console.log("s:  " + s.toString());
-
-// дни никто не просил использовать
 if (d==2) {
-    //res = "2 дня ";
     h = h + 48;
 } else if (d==1) {
-    //res = "1 день ";
     h = h + 24;
 }
 
@@ -73,7 +57,5 @@ if (s==1 || s==21 || s==31 || s==41 || s==51) {
     res = res + s.toString() + " секунд";
 }
 
-// отрезаем пробел в конце
 res = res.trim();
 console.log(res);
-*/
