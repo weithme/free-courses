@@ -1,4 +1,4 @@
-var    i = (process.argv[2]).toString;
+var    i = (process.argv[2]).toString();
 var    a = process.argv[3];
 var    b = process.argv[4];
 
