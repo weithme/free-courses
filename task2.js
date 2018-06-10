@@ -4,7 +4,6 @@ var y = parseInt(process.argv[4]);
 
 var feb = 28;
 
-/*
 if (y >= 1600) {
     if (y % 400 == 0) {
         feb = 29;
@@ -22,12 +21,6 @@ if (y >= 1600) {
         feb = 28;
     }
 }
-*/
-
-if (y % 4 == 0) {
-    feb = 29;
-} 
-
 
 var dinm1 = {1: 31,
             2: feb,
