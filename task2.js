@@ -4,7 +4,7 @@ var y = parseInt(process.argv[4]);
 
 var feb = 28;
 
-if (y >= 1600) {
+if (y >= 0) {
     if (y % 400 == 0) {
         feb = 29;
     } else if (y % 100 == 0) {
