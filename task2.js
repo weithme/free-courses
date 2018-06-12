@@ -1,5 +1,5 @@
 var d = parseInt(process.argv[2]);
-var m_str = (process.argv[3]).toString();
+var m_str = (process.argv[3]).toString().toLowerCase();
 var y = parseInt(process.argv[4]);
 
 var feb = 28;
