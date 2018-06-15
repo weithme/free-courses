@@ -1,4 +1,3 @@
-/*
 var    i = (process.argv[2]).toString();
 var    a = process.argv[3];
 var    b = process.argv[4];
@@ -55,4 +54,3 @@ function nto10(s) {
 
 var str = a_to_ten(i,a);
 process.stdout.write(str.toString(b));
-*/
