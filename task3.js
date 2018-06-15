@@ -1,3 +1,4 @@
+/*
 var t1 = parseInt(process.argv[2]);
 var t2 = parseInt(process.argv[3]);
 var t = t1 + t2;
@@ -59,3 +60,4 @@ if (s==1 || s==21 || s==31 || s==41 || s==51) {
 
 res = res.trim();
 console.log(res);
+*/
