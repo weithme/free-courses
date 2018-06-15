@@ -1,3 +1,4 @@
+/*
 var d = parseInt(process.argv[2]);
 var m_str = (process.argv[3]).toString().toLowerCase();
 var y = parseInt(process.argv[4]);
@@ -76,3 +77,4 @@ if (res>=0) {
 
     console.log(res.toString());
 }
+*/
